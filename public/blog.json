@@ -1,0 +1,47 @@
+[
+  {
+    "author": "John Doe",
+    "author_img": "https://i.ibb.co/kQnxWPY/avatar1.jpg",
+    "profession": "Photographer",
+    "read_time": "10 minutes",
+    "blog_title": "Exploring the Wilderness",
+    "blog_img": "https://i.ibb.co/tKv6cF3/blog1.jpg",
+    "hashtags": ["nature", "adventure", "travel"]
+  },
+  {
+    "author": "Alice Smith",
+    "author_img": "https://i.ibb.co/vJ6g067/avatar2.jpg",
+    "profession": "Chef",
+    "read_time": "8 minutes",
+    "blog_title": "The Art of Cooking",
+    "blog_img": "https://i.ibb.co/J53Mxy3/blog2.jpg",
+    "hashtags": ["food", "recipes", "cooking"]
+  },
+  {
+    "author": "Michael Johnson",
+    "author_img": "https://i.ibb.co/zNv4bDX/avatar3.jpg",
+    "profession": "Software Engineer",
+    "read_time": "15 minutes",
+    "blog_title": "Programming Fundamentals",
+    "blog_img": "https://i.ibb.co/cYqdQbk/blog3.jpg",
+    "hashtags": ["coding", "programming", "technology"]
+  },
+  {
+    "author": "Emma Brown",
+    "author_img": "https://i.ibb.co/3SgTDZS/avatar4.jpg",
+    "profession": "Fitness Trainer",
+    "read_time": "12 minutes",
+    "blog_title": "Healthy Lifestyle Tips",
+    "blog_img": "https://i.ibb.co/hcJQP1N/blog4.jpg",
+    "hashtags": ["health", "fitness", "wellness"]
+  },
+  {
+    "author": "David Lee",
+    "author_img": "https://i.ibb.co/jyJsWsc/avatar5.jpg",
+    "profession": "Data Scientist",
+    "read_time": "7 minutes",
+    "blog_title": "Artificial Intelligence in Everyday Life",
+    "blog_img": "https://i.ibb.co/SVmL70d/blog5.jpg",
+    "hashtags": ["AI", "technology", "future"]
+  }
+]
