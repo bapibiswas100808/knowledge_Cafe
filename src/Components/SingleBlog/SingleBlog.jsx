@@ -1,7 +1,6 @@
 import PropTypes from "prop-types";
 import { FaBookmark } from "react-icons/fa";
-const SingleBlog = ({ blog }) => {
-  console.log(blog);
+const SingleBlog = ({ blog, handleSelectBlog, handleReadTime }) => {
   return (
     <div>
       <div className="border-b-2 rounded-3xl mb-5">
@@ -25,8 +24,11 @@ const SingleBlog = ({ blog }) => {
               </div>
             </div>
             <p className="flex items-center gap-2 mt-5 lg:mt-0">
-              <span> 0 Min Read</span>
-              <FaBookmark className="text-3xl" />
+              <span> {blog.read_time.split(" ")[0]} Min Read</span>
+              <FaBookmark
+                onClick={() => handleSelectBlog(blog)}
+                className="text-3xl cursor-pointer"
+              />
             </p>
           </div>
           <h2 className="text-3xl font-bold mb-4">{blog.blog_title}</h2>
@@ -35,7 +37,14 @@ const SingleBlog = ({ blog }) => {
               <p key={idx}>#{hashtag}</p>
             ))}
           </div>
-          <span className="text-purple-600 underline">Mark As Read</span>
+          <span
+            onClick={() =>
+              handleReadTime(blog.read_time.split(" ")[0], blog.profession)
+            }
+            className="text-purple-600 underline cursor-pointer"
+          >
+            Mark As Read
+          </span>
         </div>
       </div>
     </div>
@@ -43,6 +52,8 @@ const SingleBlog = ({ blog }) => {
 };
 SingleBlog.propTypes = {
   blog: PropTypes.object.isRequired,
+  handleSelectBlog: PropTypes.func,
+  handleReadTime: PropTypes.func,
 };
 
 export default SingleBlog;
